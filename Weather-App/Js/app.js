@@ -65,7 +65,7 @@ function onError(error)
 }
 
 function getData(Lat,Lon){
-    fetch("https://api.openweathermap.org/data/2.5/weather?"+"lat="+Lat+"&lon="+Lon+"&units=metric&appid="+key)
+    fetch("https://api.openweathermap.org/data/2.5/weather?lat="+Lat+"&lon="+Lon+"&units=metric&appid="+key)
     .then(res => res.json())
     .then(data => {
         console.log(data);

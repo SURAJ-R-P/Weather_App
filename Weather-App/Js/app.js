@@ -54,9 +54,9 @@ locationButton.addEventListener("click", ()=>{
 function onSuccess(position)
 {
     console.log(position);
-    const Latitude = position.coords.latitude;
-    const Longitude = position.coords.longitude;
-    getData(Latitude, Longitude);   
+    const Lat = position.coords.latitude;
+    const Lon = position.coords.longitude;
+    getData(Lat, Lon);   
 }
 
 function onError(error)
